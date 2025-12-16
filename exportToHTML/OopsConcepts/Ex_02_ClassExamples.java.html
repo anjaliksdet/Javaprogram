@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Ex_02_ClassExamples.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Ex_02_ClassExamples.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">OopsConcepts</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Ex_02_ClassExamples </span><span class="s2">{</span>
+    <span class="s0">static void </span><span class="s1">main</span><span class="s2">() {</span>
+        <span class="s1">Employee details</span><span class="s2">= </span><span class="s0">new </span><span class="s1">Employee</span><span class="s2">();</span>
+        <span class="s1">details</span><span class="s2">.</span><span class="s1">firstName</span><span class="s2">=</span><span class="s3">&quot;Anjali&quot;</span><span class="s2">;</span>
+        <span class="s1">details</span><span class="s2">.</span><span class="s1">employeeId</span><span class="s2">= </span><span class="s4">234</span><span class="s2">;</span>
+        <span class="s1">details</span><span class="s2">.</span><span class="s1">income</span><span class="s2">= </span><span class="s3">&quot;20lpa&quot;</span><span class="s2">;</span>
+        <span class="s1">details</span><span class="s2">.</span><span class="s1">designation</span><span class="s2">= </span><span class="s3">&quot;SDET&quot;</span><span class="s2">;</span>
+        <span class="s1">details</span><span class="s2">.</span><span class="s1">intro</span><span class="s2">();</span>
+
+        <span class="s1">Employee skilled</span><span class="s2">= </span><span class="s0">new </span><span class="s1">Employee</span><span class="s2">();</span>
+        <span class="s1">skilled</span><span class="s2">.</span><span class="s1">firstName</span><span class="s2">=</span><span class="s3">&quot;Yash&quot;</span><span class="s2">;</span>
+        <span class="s1">skilled</span><span class="s2">.</span><span class="s1">designation</span><span class="s2">=</span><span class="s3">&quot;SDET&quot;</span><span class="s2">;</span>
+        <span class="s1">skilled</span><span class="s2">.</span><span class="s1">employeeId</span><span class="s2">=</span><span class="s4">235</span><span class="s2">;</span>
+        <span class="s1">skilled</span><span class="s2">.</span><span class="s1">income</span><span class="s2">=</span><span class="s3">&quot;20lpa&quot;</span><span class="s2">;</span>
+        <span class="s1">skilled</span><span class="s2">.</span><span class="s1">intro</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">Employee</span><span class="s2">{</span>
+    <span class="s1">String firstName</span><span class="s2">;</span>
+    <span class="s0">int </span><span class="s1">employeeId</span><span class="s2">;</span>
+    <span class="s1">String designation</span><span class="s2">;</span>
+    <span class="s1">String income</span><span class="s2">;</span>
+    <span class="s0">void </span><span class="s1">intro</span><span class="s2">(){</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Employee name =&quot; </span><span class="s2">+ </span><span class="s1">firstName </span><span class="s2">+ </span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">Employeeid=&quot;</span><span class="s2">+ </span><span class="s1">employeeId </span><span class="s2">+</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s2">+</span><span class="s3">&quot;Designation= &quot;</span><span class="s2">+ </span><span class="s1">designation</span><span class="s2">+</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">Salary=&quot; </span><span class="s2">+</span><span class="s1">income </span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

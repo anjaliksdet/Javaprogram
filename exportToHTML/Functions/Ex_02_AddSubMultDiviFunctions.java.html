@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Ex_02_AddSubMultDiviFunctions.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Ex_02_AddSubMultDiviFunctions.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Functions</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Ex_02_AddSubMultDiviFunctions </span><span class="s2">{</span>
+    <span class="s0">static void </span><span class="s1">main</span><span class="s2">() {</span>
+
+        <span class="s3">//accepting entery form the user</span>
+        <span class="s1">Scanner sc </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Enter the number1&quot;</span><span class="s2">);</span>
+
+        <span class="s0">float </span><span class="s1">value1 </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextFloat</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Enter the number2&quot;</span><span class="s2">);</span>
+        <span class="s0">float </span><span class="s1">value2 </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextFloat</span><span class="s2">();</span>
+
+        <span class="s3">//Calling method for the addition</span>
+        <span class="s1">add</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">, </span><span class="s1">value2</span><span class="s2">);</span>
+
+        <span class="s3">//calling method for the multiplication</span>
+        <span class="s0">float </span><span class="s1">multiply </span><span class="s2">= </span><span class="s1">mul</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">, </span><span class="s1">value2</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Multiplication value--&gt;&quot; </span><span class="s2">+ </span><span class="s1">multiply</span><span class="s2">);</span>
+
+        <span class="s3">//calling method for division</span>
+        <span class="s0">float </span><span class="s1">division </span><span class="s2">= </span><span class="s1">div</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">, </span><span class="s1">value2</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Division value--&gt;&quot; </span><span class="s2">+ </span><span class="s1">division</span><span class="s2">);</span>
+
+        <span class="s3">//calling method for substraction</span>
+        <span class="s0">float </span><span class="s1">miun </span><span class="s2">= </span><span class="s1">sub</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">, </span><span class="s1">value2</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Substraction value--&gt;&quot; </span><span class="s2">+ </span><span class="s1">miun</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+
+
+    <span class="s0">static float </span><span class="s1">add</span><span class="s2">(</span><span class="s0">float </span><span class="s1">a</span><span class="s2">, </span><span class="s0">float </span><span class="s1">b</span><span class="s2">) {</span>
+        <span class="s0">float </span><span class="s1">sum </span><span class="s2">= </span><span class="s1">a </span><span class="s2">+ </span><span class="s1">b</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;addition value--&gt;&quot; </span><span class="s2">+ </span><span class="s1">sum</span><span class="s2">);</span>
+        <span class="s0">return </span><span class="s1">sum</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+
+    <span class="s0">static float </span><span class="s1">mul</span><span class="s2">(</span><span class="s0">float </span><span class="s1">a</span><span class="s2">, </span><span class="s0">float </span><span class="s1">b</span><span class="s2">) {</span>
+        <span class="s0">return </span><span class="s1">a </span><span class="s2">* </span><span class="s1">b</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">static float </span><span class="s1">div</span><span class="s2">(</span><span class="s0">float </span><span class="s1">a</span><span class="s2">, </span><span class="s0">float </span><span class="s1">b</span><span class="s2">) {</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">b </span><span class="s2">== </span><span class="s5">0</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;zero value for b is not allowed&quot;</span><span class="s2">);</span>
+            <span class="s0">return </span><span class="s5">0</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">return </span><span class="s1">a </span><span class="s2">/ </span><span class="s1">b</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+
+        <span class="s0">static float </span><span class="s1">sub </span><span class="s2">( </span><span class="s0">float </span><span class="s1">a</span><span class="s2">, </span><span class="s0">float </span><span class="s1">b</span><span class="s2">)</span>
+        <span class="s2">{</span>
+            <span class="s0">return </span><span class="s1">a </span><span class="s2">- </span><span class="s1">b</span><span class="s2">;</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+
+</pre>
+</body>
+</html>

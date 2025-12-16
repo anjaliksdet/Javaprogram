@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Ex_02_Overriding.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Ex_02_Overriding.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Polymorphism</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Ex_02_Overriding </span><span class="s2">{</span>
+    <span class="s0">static void </span><span class="s1">main</span><span class="s2">() {</span>
+        <span class="s1">TestCase1 tc1</span><span class="s2">= </span><span class="s0">new </span><span class="s1">TestCase1</span><span class="s2">();</span>
+        <span class="s1">tc1</span><span class="s2">.</span><span class="s1">Browser</span><span class="s2">();</span>
+        <span class="s1">TestCase2 tc2</span><span class="s2">= </span><span class="s0">new </span><span class="s1">TestCase2</span><span class="s2">();</span>
+        <span class="s1">tc2</span><span class="s2">.</span><span class="s1">Browser</span><span class="s2">();</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">OpenBrowser</span><span class="s2">{</span>
+    <span class="s0">void </span><span class="s1">Browser</span><span class="s2">(){</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Open browser in 2 min&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">TestCase1 </span><span class="s0">extends </span><span class="s1">OpenBrowser</span><span class="s2">{</span>
+    <span class="s0">void </span><span class="s1">Static1</span><span class="s2">(){</span>
+        <span class="s1">Browser</span><span class="s2">();</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+<span class="s0">class </span><span class="s1">TestCase2 </span><span class="s0">extends </span><span class="s1">OpenBrowser</span><span class="s2">{</span>
+    <span class="s1">@Override</span>
+    <span class="s0">void </span><span class="s1">Browser</span><span class="s2">(){</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;open in 1 min&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

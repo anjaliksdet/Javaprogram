@@ -15,6 +15,10 @@ public class Practise02_Variables {
 // variable can have a data type boolean
         boolean abc= true;
         System.out.println("Hello");
+        //Varibale to be inatlized
+        int z ;
+        System.out.println(a);
+
         
     }
 }

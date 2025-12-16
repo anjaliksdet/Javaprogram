@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Ex_01_UserDefinedFunctions.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Ex_01_UserDefinedFunctions.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">Functions</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Ex_01_UserDefinedFunctions </span><span class="s2">{</span>
+    <span class="s0">static void </span><span class="s1">main</span><span class="s2">() {</span>
+        <span class="s1">greet</span><span class="s2">();</span>
+        <span class="s1">String n </span><span class="s2">= </span><span class="s1">name</span><span class="s2">();</span>
+        <span class="s0">int </span><span class="s1">a </span><span class="s2">= </span><span class="s1">experience</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">name</span><span class="s2">());</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;No of yr experience&quot; </span><span class="s2">+ </span><span class="s1">experience</span><span class="s2">());</span>
+        <span class="s1">fullname</span><span class="s2">(</span><span class="s3">&quot;Anjali&quot;</span><span class="s2">, </span><span class="s3">&quot;Kondapure&quot;</span><span class="s2">);</span>
+        <span class="s1">peronaldetails</span><span class="s2">(</span><span class="s3">&quot;Banaglore&quot;</span><span class="s2">, </span><span class="s4">31</span><span class="s2">, </span><span class="s4">87000</span><span class="s2">);</span>
+        <span class="s1">peronaldetails</span><span class="s2">(</span><span class="s3">&quot;Bidar&quot;</span><span class="s2">, </span><span class="s4">12</span><span class="s2">, </span><span class="s4">0</span><span class="s2">);</span>
+
+        <span class="s5">//accepting value for the keyboard</span>
+        <span class="s1">Scanner input </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Enter the valude of place &quot;</span><span class="s2">);</span>
+        <span class="s1">String place </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">next</span><span class="s2">();</span>
+        <span class="s0">int </span><span class="s1">age </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s0">double </span><span class="s1">salary </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s5">//sending the parameters</span>
+        <span class="s1">peronaldetails</span><span class="s2">(</span><span class="s1">place</span><span class="s2">, </span><span class="s1">age</span><span class="s2">, </span><span class="s1">salary</span><span class="s2">);</span>
+
+        <span class="s5">//accepting 2 numbers from the user</span>
+        <span class="s1">Scanner sc</span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Enter the value1&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">value1 </span><span class="s2">=</span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Enter the value2&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">value2</span><span class="s2">=</span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s0">float </span><span class="s1">sum </span><span class="s2">= </span><span class="s1">addition</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">,</span><span class="s1">value2</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;sum&quot; </span><span class="s2">+ </span><span class="s1">addition</span><span class="s2">(</span><span class="s1">value1</span><span class="s2">,</span><span class="s1">value2</span><span class="s2">) );</span>
+    <span class="s2">}</span>
+
+    <span class="s5">//1.No return type no parameters</span>
+    <span class="s0">static void </span><span class="s1">greet</span><span class="s2">() {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Hi,I am very happy soul&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s5">//2.with return type but no parameters</span>
+    <span class="s0">static </span><span class="s1">String name</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s3">&quot;Anjali&quot;</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s0">static int </span><span class="s1">experience</span><span class="s2">() {</span>
+        <span class="s0">return </span><span class="s4">7</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s5">// 3.without return type with parameters</span>
+    <span class="s0">static void </span><span class="s1">fullname</span><span class="s2">(</span><span class="s1">String FirtsName</span><span class="s2">, </span><span class="s1">String Surname</span><span class="s2">) {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Name&quot; </span><span class="s2">+ </span><span class="s1">FirtsName </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">Surname</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s0">static void </span><span class="s1">peronaldetails</span><span class="s2">(</span><span class="s1">String place</span><span class="s2">, </span><span class="s0">int </span><span class="s1">age</span><span class="s2">, </span><span class="s0">double </span><span class="s1">salary</span><span class="s2">) {</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Personal details</span><span class="s0">\n</span><span class="s3">&quot; </span><span class="s2">+ </span><span class="s3">&quot;your place --&gt;&quot; </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">place </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s3">&quot;your age --&gt;&quot; </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">age </span><span class="s2">+ </span><span class="s3">&quot;your salary --&gt;&quot; </span><span class="s2">+ </span><span class="s3">&quot; &quot; </span><span class="s2">+ </span><span class="s1">salary</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s5">//4.With returntype with parameters</span>
+    <span class="s0">static float </span><span class="s1">addition</span><span class="s2">(</span><span class="s0">int </span><span class="s1">a </span><span class="s2">, </span><span class="s0">float </span><span class="s1">b</span><span class="s2">){</span>
+        <span class="s5">//int add =a+b;</span>
+        <span class="s0">return </span><span class="s1">a</span><span class="s2">+</span><span class="s1">b</span><span class="s2">;</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+
+
+
+</pre>
+</body>
+</html>
